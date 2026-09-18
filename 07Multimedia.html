@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <center>
+        <h1>Multimedia</h1>
+        <br>
+        <h3><a href="index.html">REGRESAR</a></h3>
+        <br>
+        <h3>EJEMPLO VIDEO 1</h3>
+        <br>
+        <video width="640" height="360" controls autoplay muted loop poster="img/Tim.jpg">
+            <source src="Media/TV.mp4" type="video/mp4">
+            <source src="Media/TV.webm" type="video/webm">
+            Tu navegador no soporta video
+        </video>
+        <br>
+        <h3>EJEMPLO AUDIO 1</h3>
+        <br>
+        <audio controls autoplay loop>
+            <source src="Media/Shop.mp3" type="audio/mp3">
+            Tu navegador no soporta la etiqueta audio
+        </audio>
+        <br>
+        <h3>EJEMPLO VIDEO CON SUBTITULOS</h3>
+
+        <video width="640" height="360" controls>
+        <source src="Media/frentS.mp4" type="video/mp4">
+
+        <track 
+            src="Media/frentS.vtt"
+            kind="subtitles"
+            srclang="es"
+            label="Español"
+            default>
+    </video>
+
+        <h3>EJEMPLO IMAGEN RELATIVA</h3>
+        <img src="img/Tim.jpg" alt="TIM BERNES-LEE" width="400" height="300" loading="lazy" border="10px">
+        <h3>EJEMPLO IMAGEN CON RUTA ABSOLUTA</h3>
+        <img src="https://www.newgrounds.com/art/view/alex-phantomglitch/clover-undertale-yellow" alt="TIM BERNES-LEE" width="400" height="300" loading="lazy" border="10px">
+        <h3>EJEMPLO FIGURE</h3>
+        <figure>
+            <img src="img/PaginaWEB2.png" alt="Semantica HTML">
+            <figcaption>Figura 1. Estructura semantica HTML</figcaption>
+        </figure>
+        <h3>EMEJPLO SWF CON EMBED</h3>
+
+
+        <h3>EJEMPLO CANVAS</h3>
+        <canvas id="miCanvas" width="300" height="200"></canvas>
+        <script>
+            
+        </script>
+        <h3>EJEPLO DE SVG</h3>
+        <svg width="500" height="300" viewBox="0 0 500 300"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Cielo -->
+        <rect width="500" height="300" fill="skyblue"/>
+
+        <!-- Sol -->
+        <circle cx="420" cy="60" r="40" fill="yellow"/>
+
+        <!-- Suelo -->
+        <rect x="0" y="220" width="500" height="80" fill="green"/>
+
+        <!-- Casa -->
+        <rect x="150" y="140" width="150" height="100" fill="orange"/>
+
+        <!-- Techo -->
+        <polygon points="130,140 225,70 320,140" fill="brown"/>
+
+        <!-- Puerta -->
+        <rect x="205" y="185" width="40" height="55" fill="darkblue"/>
+
+        <!-- Ventana -->
+        <rect x="170" y="160" width="35" height="30" fill="lightblue"/>
+        <line x1="187" y1="160" x2="187" y2="190" stroke="black"/>
+        <line x1="170" y1="175" x2="205" y2="175" stroke="black"/>
+
+        <!-- Árbol -->
+        <rect x="70" y="160" width="25" height="80" fill="saddlebrown"/>
+        <circle cx="82" cy="140" r="45" fill="darkgreen"/>
+        <circle cx="55" cy="155" r="30" fill="darkgreen"/>
+        <circle cx="110" cy="155" r="30" fill="darkgreen"/>
+
+    </svg>
+    </center>
+</body>
+</html>
